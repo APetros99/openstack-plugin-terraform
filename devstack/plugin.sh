@@ -16,7 +16,7 @@ function install_terraform {
     }
 
     # Estrai e copia in /usr/local/bin
-    unzip -o /tmp/${T_FILE} -d /usr/local/bin/ || {
+    sudo unzip -o /tmp/${T_FILE} -d /usr/local/bin/ || {
         echo "ERROR: Failed to unzip Terraform"
         exit 1
     }
