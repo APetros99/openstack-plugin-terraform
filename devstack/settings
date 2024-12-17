@@ -1,0 +1,3 @@
+# settings per DevStack
+enable_service openstack-plugin-terraform
+define_plugin openstack-plugin-terraform
