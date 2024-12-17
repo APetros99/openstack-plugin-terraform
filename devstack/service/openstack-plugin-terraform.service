@@ -1,0 +1,12 @@
+[Unit]
+Description=Openstack Plugin Terraform
+After=network.target
+
+[Service]
+User=petros
+Type=simple
+ExecStart=/usr/local/bin/terraform apply -auto-approve /opt/stack/openstack-plugin-terraform/examples/main.tf
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
